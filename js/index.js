@@ -1,3 +1,4 @@
+// requires
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
@@ -30,14 +31,12 @@ async function init() {
     // takes starCount and references it to the selector in the generateHTML fcn
     data.starCount = starCount;
 
-    // // 
-    // profile = username;
-
     // passes the data received from the axios API calls into the generateHTML fcn and consolodates it as a const variable
     const html = generateHTML(data);
 
     // writes a new index.html file using the data from the generateHTML fcn
     writeFile("index.html", html);
+    // creates PDf based on generated html
     createPDF(html);
   } catch (err) {
     console.log(err);
@@ -80,6 +79,7 @@ function getColor() {
   return color;
 }
 
+// function to create PDF using puppeteer
 async function createPDF(html) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
