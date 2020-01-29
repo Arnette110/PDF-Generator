@@ -1,4 +1,4 @@
-# Profile Generator
+# PDF Generator
 
 This is is a command-line application that dynamically generates a PDF profile from a GitHub username.  
 
@@ -28,8 +28,7 @@ This is is a command-line application that dynamically generates a PDF profile f
 * Number of users following
 
 ## Gif
-
-
+![profile-generator](https://user-images.githubusercontent.com/54122844/73402335-51a71780-42aa-11ea-9598-bc5a09bbfd4b.gif)
 
 
 ## Built With
@@ -53,6 +52,3 @@ This is is a command-line application that dynamically generates a PDF profile f
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
-
-
-# PDF-Generator
